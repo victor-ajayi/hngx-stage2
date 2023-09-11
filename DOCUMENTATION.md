@@ -52,6 +52,8 @@ Status Code: **422 Unprocessable Entity**
 
 This endpoint gets a user with the provided ID in the path parameter.
 
+Sample Request: `/api/1`
+
 #### Response
 
 Status Code: **200 OK**
@@ -77,6 +79,8 @@ Status Code: **404 Not Found**
 
 This endpoint updates a user with the provided ID in the path parameter. It expects a JSON request containing the new data in the following format:
 
+Sample Request: `/api/1`
+
 ```json
 {
   "name": "Hermione Granger"
@@ -90,7 +94,7 @@ Status Code: **200 OK**
 ```json
 {
   "id": 1,
-  "name": "Harry Potter"
+  "name": "Hermione Granger"
 }
 ```
 
