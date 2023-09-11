@@ -32,7 +32,7 @@ For requests with extra fields like this:
 }
 ```
 
-a error message will be returned (example below):
+an error message will be returned (example below):
 
 Status Code: **422 Unprocessable Entity**
 
@@ -107,7 +107,7 @@ For requests with extra fields like this:
 }
 ```
 
-a error message will be returned (example below):
+an error message will be returned (example below):
 
 Status Code: **422 Unprocessable Entity**
 
