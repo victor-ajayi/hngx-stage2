@@ -1,6 +1,6 @@
 # HNGX-Stage 2 Task
 
-## Getting Started
+## Build
 
 Clone the repository:
 
@@ -14,9 +14,7 @@ Install the project dependencies using the following command after creating a vi
 pip install -r requirements.txt
 ```
 
-## Build
-
-To run the project, run the command:
+To run the project, use the command:
 
 ```
 uvicorn app.main:app --reload
