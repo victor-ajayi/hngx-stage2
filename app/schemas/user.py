@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Extra
 
 
 class UserBase(BaseModel):
@@ -8,13 +8,15 @@ class UserBase(BaseModel):
 class UserCreate(BaseModel):
     name: str
 
+    class Config:
+        extra = Extra.forbid
+
 
 class UserUpdate(BaseModel):
     name: str
 
-
-class UserRequest(BaseModel):
-    name: str
+    class Config:
+        extra = Extra.forbid
 
 
 class User(UserBase):
