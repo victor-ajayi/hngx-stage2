@@ -14,7 +14,7 @@ This endpoint creates a user resource. It expects a JSON request strictly in the
 
 #### Response
 
-Status Code: 201 Created
+Status Code: **201 Created**
 
 ```json
 {
@@ -34,7 +34,7 @@ For requests with extra fields like this:
 
 a error message will be returned (example below):
 
-Status Code: 422 Unprocessable Entity
+Status Code: **422 Unprocessable Entity**
 
 ```json
 {
@@ -54,7 +54,7 @@ This endpoint gets a user with the provided ID in the path parameter.
 
 #### Response
 
-Status Code: 200 OK
+Status Code: **200 OK**
 
 ```json
 {
@@ -65,7 +65,7 @@ Status Code: 200 OK
 
 The following error is returned when a request is made with an ID that does not exist in the database:
 
-Status Code: 404 Not Found
+Status Code: **404 Not Found**
 
 ```json
 {
@@ -85,7 +85,7 @@ This endpoint updates a user with the provided ID in the path parameter. It expe
 
 #### Response
 
-Status Code: 200 OK
+Status Code: **200 OK**
 
 ```json
 {
@@ -105,7 +105,7 @@ For requests with extra fields like this:
 
 a error message will be returned (example below):
 
-Status Code: 422 Unprocessable Entity
+Status Code: **422 Unprocessable Entity**
 
 ```json
 {
@@ -125,4 +125,4 @@ This endpoint deletes a user with the provided ID in the path parameter.
 
 #### Response
 
-Status Code: 204 No Content
+Status Code: **204 No Content**
