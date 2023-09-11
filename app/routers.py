@@ -26,20 +26,8 @@ def create_user(
 
 
 @router.get("/{user_id}", status_code=200)
-def get_user_by_id(user_id: int, db: Session = Depends(get_db)) -> schemas.User:
+def get_user(user_id: int, db: Session = Depends(get_db)) -> schemas.User:
     user = db.query(User).filter_by(id=user_id).first()
-    if not user:
-        raise HTTPException(404, detail="User does not exist.")
-
-    return user
-
-
-@router.get("/", status_code=200)
-def get_user(
-    user_request: schemas.UserRequest,
-    db: Session = Depends(get_db),
-) -> schemas.User:
-    user = db.query(User).filter_by(name=user_request.name).first()
     if not user:
         raise HTTPException(404, detail="User does not exist.")
 
