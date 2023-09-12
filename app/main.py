@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from .routers import router
 
-app = FastAPI(docs_url="/", title="denarii API")
+app = FastAPI(docs_url="/", title="API")
 
 origins = ["*"]
 
