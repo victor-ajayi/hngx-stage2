@@ -19,3 +19,5 @@ To run the project, use the command:
 ```
 uvicorn app.main:app --reload
 ```
+
+UML Class Diagram: [model.jpg](https://disk.yandex.ru/i/hByWPEio7h-Smg)
